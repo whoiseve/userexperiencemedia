@@ -1,76 +1,6 @@
 (function ($) {
   "use strict";
 
-  if ($(".contact-form-validated").length) {
-    $(".contact-form-validated").validate({
-      // initialize the plugin
-      rules: {
-        name: {
-          required: true,
-        },
-        email: {
-          required: true,
-          email: true,
-        },
-        message: {
-          required: true,
-        },
-        subject: {
-          required: true,
-        },
-      },
-      submitHandler: function (form) {
-        // sending value with ajax request
-        $.post(
-          $(form).attr("action"),
-          $(form).serialize(),
-          function (response) {
-            $(form).parent().find(".result").append(response);
-            $(form).find('input[type="text"]').val("");
-            $(form).find('input[type="email"]').val("");
-            $(form).find("textarea").val("");
-          }
-        );
-        return false;
-      },
-    });
-  }
-
-  // mailchimp form
-  if ($(".mc-form").length) {
-    $(".mc-form").each(function () {
-      var Self = $(this);
-      var mcURL = Self.data("url");
-      var mcResp = Self.parent().find(".mc-form__response");
-
-      Self.ajaxChimp({
-        url: mcURL,
-        callback: function (resp) {
-          // appending response
-          mcResp.append(function () {
-            return '<p class="mc-message">' + resp.msg + "</p>";
-          });
-          // making things based on response
-          if (resp.result === "success") {
-            // Do stuff
-            Self.removeClass("errored").addClass("successed");
-            mcResp.removeClass("errored").addClass("successed");
-            Self.find("input").val("");
-
-            mcResp.find("p").fadeOut(10000);
-          }
-          if (resp.result === "error") {
-            Self.removeClass("successed").addClass("errored");
-            mcResp.removeClass("successed").addClass("errored");
-            Self.find("input").val("");
-
-            mcResp.find("p").fadeOut(10000);
-          }
-        },
-      });
-    });
-  }
-
   if ($(".video-popup").length) {
     $(".video-popup").magnificPopup({
       type: "iframe",
@@ -263,36 +193,6 @@
     });
   }
 
-  //Pricing Tabs
-  if ($(".tabs-box").length) {
-    $(".tabs-box .tab-buttons .tab-btn").on("click", function (e) {
-      e.preventDefault();
-      var target = $($(this).attr("data-tab"));
-
-      if ($(target).is(":visible")) {
-        return false;
-      } else {
-        target
-          .parents(".tabs-box")
-          .find(".tab-buttons")
-          .find(".tab-btn")
-          .removeClass("active-btn");
-        $(this).addClass("active-btn");
-        target
-          .parents(".tabs-box")
-          .find(".tabs-content")
-          .find(".tab")
-          .fadeOut(0);
-        target
-          .parents(".tabs-box")
-          .find(".tabs-content")
-          .find(".tab")
-          .removeClass("active-tab");
-        $(target).fadeIn(300);
-        $(target).addClass("active-tab");
-      }
-    });
-  }
 
   /*-- Quantity --*/
   $(".add").on("click", function () {
@@ -354,7 +254,7 @@
     });
   }
 
-  let thmOwlCarousels = $(".ogency-owl__carousel");
+  let thmOwlCarousels = $(".ux-owl__carousel");
   if (thmOwlCarousels.length) {
     thmOwlCarousels.each(function () {
       let elm = $(this);
@@ -367,7 +267,7 @@
 
   function thmTinyInit() {
     // tiny slider
-    const tinyElm = document.querySelectorAll(".ogency-tiny__slider");
+    const tinyElm = document.querySelectorAll(".ux-tiny__slider");
     tinyElm.forEach(function (tinyElm) {
       const tinyOptions = JSON.parse(tinyElm.dataset.tinyOptions);
       let thmTinySlider = tns(tinyOptions);
@@ -615,13 +515,13 @@
 
   //Strech Column
   /*$(window).on("resize", function () {
-    ogency_stretch();
+    ux_stretch();
   });*/
-  ogency_stretch();
+  ux_stretch();
 
-  function ogency_stretch() {
+  function ux_stretch() {
     var i = $(window).width();
-    $(".row .ogency-stretch-element-inside-column").each(function () {
+    $(".row .ux-stretch-element-inside-column").each(function () {
       var $this = $(this),
         row = $this.closest(".row"),
         cols = $this.closest('[class^="col-"]'),
