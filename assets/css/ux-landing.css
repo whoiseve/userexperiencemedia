@@ -839,7 +839,7 @@ h6 {
   position: absolute;
   bottom: 0;
   right: 0;
-  box-shadow: -5px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: -5px 0px 40px 0px rgba(0, 0, 0, 0.15); */
 }
 
 @media (min-width: 1200px) {
