@@ -3655,7 +3655,6 @@ h6 {
   }
 }
 
-
 @-o-keyframes blink {
   0% {
     opacity: 1;
@@ -4593,7 +4592,7 @@ h6 {
 }
 
 .about-three__thumb--one {
-  background-color: var(--ux-black2);
+  /* background-color: var(--ux-black2); */
   display: inline-block;
   position: absolute;
   left: 0;
@@ -9222,6 +9221,14 @@ h6 {
 
 .error-page__404 img {
   max-width: 100%;
+  position: absolute;
+  right: -35px;
+  top: -250px;
+  -webkit-animation: movebounce3 3s linear infinite;
+  animation: movebounce3 3s linear infinite;
+}
+.error-page__coming-soon img {
+  max-width: 30%;
   position: absolute;
   right: -190px;
   top: -111px;

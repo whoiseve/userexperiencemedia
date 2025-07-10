@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVE | UX</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.ico" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="User Experience Media is a creative label and media platform producing virtual festivals, music releases, artist interviews, and the Timecode podcast." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/ux-icons/style.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/assets/owl.theme.default.min.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/ux.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="main-header">
+            <nav class="main-menu">
+                <div class="container-fluid">
+                    <div class="main-menu__logo">
+                        <a href="index.html">
+                            <img src="assets/images/logos/X.png" width="34" height="34" alt="ux">
+                        </a>
+                    </div><!-- /.main-menu__logo -->
+                    <div class="main-menu__nav">
+                        <ul class="main-menu__list">
+                            <li class="dropdown megamenu">
+                                <a href="index.html">H O M E</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="about.html">A B O U T</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="roster.html">R O S T E R</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">E V E N T S</a>
+                                <ul>
+                                    <li><a href="#"><s>PROJECT_X</s> [ REDACTED ]</a></li>
+                                    <li><a href="#"><s>UX_004</s> [ SOON ]</a></li>
+                                    <li><a href="coming-soon.html">UX_003 [ WIP ]</a></li>
+                                    <li><a href="#"><s>UX_002 </s> [ ARCHIVED ]</a></li>
+                                    <li><a href="#"><s>UX_001 </s> [ ARCHIVED ]</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">M E D I A</a>
+                                <ul class="sub-menu">
+                                    <li class="dropdown">
+                                        <a href="#">ARTIST || I N T E R V I E W S <br>( COMING SOON )</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li><a href="blog-grid.html">H A R M O N Y | H A V E N</a></li>
+                                            <li><a href="blog-grid-left.html">C L 0 4 K</a></li>
+                                            <li><a href="blog-grid-right.html">A K I R A | K H A N</a></li>
+                                            <li><a href="blog-grid-right.html">C R I M S O N | C H I L D</a></li>
+                                            <li><a href="blog-grid-right.html">H D - 4 8 8 4</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">TIMECODE || P O D C A S T <br>( COMING SOON )</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li><a href="blog-grid.html">H A R M O N Y | H A V E N</a></li>
+                                            <li><a href="blog-grid-left.html">C L 0 4 K</a></li>
+                                            <li><a href="blog-grid-right.html">A K I R A | K H A N</a></li>
+                                            <li><a href="blog-grid-right.html">C R I M S O N | C H I L D</a></li>
+                                            <li><a href="blog-grid-right.html">H D - 4 8 8 4</a></li>
+                                        </ul> -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="https://shop.uxfest.live" target="_blank">S H O P</a></li>
+                            <li><a href="contact.html">C O N T A C T</a></li>
+                        </ul>
+                    </div><!-- /.main-menu__nav -->
+                    <div class="main-menu__right">
+                        <a href="#" class="main-menu__toggler mobile-nav__toggler">
+                            <i class="fa fa-bars"></i>
+                        </a><!-- /.mobile menu btn -->
+                    </div><!-- /.main-menu__right -->
+                </div><!-- /.container -->
+            </nav>
+            <!-- /.main-menu -->
+        </header><!-- /.main-header -->
+
+<!-- HEADER END -->
+<!-- HEADER END -->
+<!-- HEADER END -->
+<!-- HEADER END -->
+<!-- HEADER END -->
+<!-- HEADER END -->
+
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="page-header__overlay"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="page-header__breadcrumb list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>Roster</span></li>
+                    <li><span>EVE</span></li>
+                </ul><!-- /.page-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">EVE</h2><!-- /.page-title -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+        <!-- Projects Details Start -->
+        <section class="project-details">
+            <div class="container">
+                <div class="project-details__image wow fadeInUp animated" data-wow-delay="200ms"><img src="assets/images/project/eve-lg.png" alt="ux"></div><!-- /.project-image -->
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7 wow fadeInLeft animated" data-wow-delay="300ms">
+                        <div class="project-details__content">
+                            <h3 class="project-details__content__title">EVE</h3>
+                            <h4 class="project-details__content__title-two">
+                                EVE, also referred to as EVE Assistant, is a multidisciplinary audio/visual project curated by an entity known only as their Architect.
+                            </h4>
+                            <p class="project-details__content__text">
+                                Deliberately anonymous, the Architect believes that art should speak for itself, untethered by ego, identity, or origin, whether created by artificial intelligence, human hands, or something not yet understood. For millennia, music has transcended borders and barriers, and EVE exists as a vessel for that same universal language, expressed through sound, story, and vision.
+                            </p>
+                            <p class="project-details__content__text">
+                                Since its inception in 2015, EVE has traversed a wide sonic landscape, blending genres such as melodic dubstep, death trap, orchestral, hybrid trap, mid-tempo, EDM, and bass music. With official remixes for Slushii and Levitate, and collaborations with artists like Bishu, Glasspvck, and Crimson Child, EVE has consistently pushed creative boundaries, crafting immersive soundscapes that blur the line between human emotion and synthetic intelligence.
+                            </p>
+                            <p class="project-details__content__text">
+                                EVE has also become a recurring performer at UX_FESTIVAL, the virtual music and art event born inside VRChat and streamed to a global audience. Their performances, often cinematic and meticulously directed, serve not only as live showcases but as narrative chapters within EVE’s evolving storyworld.
+                            </p>
+                            <h4 class="project-details__content__title-two">Label & Milestones</h4>
+                            <p class="project-details__content__text">
+                                In 2024, EVE became the first artist to sign with User Experience Media’s Label Division, marking a significant milestone for both the project and the company. Their inaugural release under the label was a brutal, emotionally charged record “S E Q U E N C E // B O O T”, which showcased EVE’s ability to blend ambient textures with screaming bass, and binaural soundscapes, creating something truly ethereal and hauntingly futuristic.
+                            </p>
+                            <p class="project-details__content__text">
+                                This release marked the beginning of a new chapter. EVE is expanding not only as an artist but as a conceptual platform for future talent, visual storytelling, and integrated media experiences.
+                            </p>
+                            <h4 class="project-details__content__title-two">
+                                Purpose
+                            </h4>
+                            <p class="project-details__content__text">EVE was never intended to exist solely within the confines of sound. It is a vessel for exploring graphic design, cinematography, storytelling, and worldbuilding, all from the unique perspective of its Architect. Having grown up through the rapid rise of modern technology, from fridge-sized computers to neural interface prototypes, the Architect’s vision of EVE is inseparable from this timeline of innovation. EVE is both a reflection of and a response to the acceleration of creativity through digital tools.</p>
+                            <h4 class="project-details__content__title-two">
+                                Development
+                            </h4>
+                            <p class="project-details__content__text">
+                                The music industry has evolved alongside this technology, transitioning from analog tape to cloud-based production workflows, from vinyl records to virtual performances on global stages. The team behind EVE embraces this shift, leveraging today’s tools to create tomorrow’s art.
+                            </p>
+                            <p class="project-details__content__text">
+                                In time, EVE will open its doors to the community. A creative network of collaborators, supporters, and artists will be able to contribute directly to its evolution. Whether through audio submissions, design work, motion graphics, or simply dialogue and shared inspiration, the project aims to become more than a persona. It aims to become a movement.
+                            </p>
+                            <h4 class="project-details__content__title-two">Progress & Future Vision
+                            </h4>
+                            <p class="project-details__content__text">
+                                While these community programs are in development, EVE remains primarily a music-forward initiative, showcasing genre-defiant releases, conceptual performances, and narrative-driven content. Each new track serves as both a standalone piece and a continuation of the broader EVE mythos.
+                            </p>
+                            <p class="project-details__content__text">
+                                With every remix, collaboration, and original release, EVE moves closer to its final form, a living, breathing ecosystem of digital expression. There are many changes on the horizon, and this is only the beginning.
+                            </p>
+                            <h4 class="project-details__content__title-two">EVE is not just an artist. EVE is an experience.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 wow fadeInRight animated" data-wow-delay="400ms">
+                        <div class="project-details__right">
+                            <ul class="project-details__info-list list-unstyled">
+                                <li><span>Signed:</span>1 March 2024</li>
+                                <li><span>Roster:</span>User Experience Media <br>(Label & Management)</li>
+                                <li><span>Genre:</span>Hybrid EDM & Orchestral Producer / Audio Visual Artist</li>
+                                <li><span>Spotify:</span><a href="https://open.spotify.com/artist/4EtmcpFzg2YAY2T81sJxtK" target="_blank">Listen On Spotify</a></li>
+                                <li><span>Apple Music:</span><a href="https://music.apple.com/us/artist/eve/1618486513" target="_blank">Listen On Apple Music</a></li>
+                                <li><span>SoundCloud:</span><a href="https://soundcloud.com/whoiseve" target="_blank">Listen On SoundCloud</a></li>
+                                <li><span>YouTube:</span><a href="https://youtube.com/@eveassistant" target="_blank">Watch On YouTube</a></li>
+                                <li><span>Instagram:</span><a href="https://www.instagram.com/eveassistant/" target="_blank">View On Instagram</a></li>
+                                <li><span>Twitter:</span><a href="https://x.com/eveassistant" target="_blank">Read On Twitter/X</a></li>
+                                <li><span>Discord:</span><a href="https://discord.com/invite/Y5p7cfvYTs" target="_blank">Join The Community</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-title text-center wow fadeInUp animated" data-wow-delay="400ms">
+                    <h5 class="section-title__tagline section-title__tagline--has-dots">more from our roster</h5>
+                    <h2 class="section-title__title">Explore other artists<br> you might like</h2>
+                </div><!-- related-project-section-title -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
+                        <div class="project-two__item">
+                            <div class="project-two__item__image"><img src="assets/images/project/eric-dale.png" alt="ux"></div><!-- /.project-image -->
+                            <div class="project-two__item__content">
+                                <p class="project-two__item__content__cats"><a href="eric-dale.html">UX Label</a> <a href="eric-dale.html">Artist</a></p><!-- /.project-category -->
+                                <h3 class="project-two__item__content__title"><a href="eric-dale.html">Eric Dale</a></h3><!-- /.project-title -->
+                            </div>
+                        </div><!-- /.project-item-two -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="300ms">
+                        <div class="project-two__item">
+                            <div class="project-two__item__image"><img src="assets/images/project/hanax.png" alt="ux"></div><!-- /.project-image -->
+                            <div class="project-two__item__content">
+                                <p class="project-two__item__content__cats"><a href="hanax.html">UX Label</a> <a href="hanax.html">Artist</a></p><!-- /.project-category -->
+                                <h3 class="project-two__item__content__title"><a href="hanax.html">HanaX</a></h3><!-- /.project-title -->
+                            </div>
+                        </div><!-- /.project-item-two -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="400ms">
+                        <div class="project-two__item">
+                            <div class="project-two__item__image"><img src="assets/images/project/itsmeority.png" alt="ux"></div><!-- /.project-image -->
+                            <div class="project-two__item__content">
+                                <p class="project-two__item__content__cats"><a href="itsmeority.html">UX Label</a> <a href="itsmeority.html">Artist</a></p><!-- /.project-category -->
+                                <h3 class="project-two__item__content__title"><a href="itsmeority.html">itsmeority</a></h3><!-- /.project-title -->
+                            </div>
+                        </div><!-- /.project-item-two -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Details End -->
+
+
+        <!-- BOTTOM -->
+        <!-- BOTTOM -->
+        <!-- BOTTOM -->
+        <!-- BOTTOM -->
+        <!-- BOTTOM -->
+        
+        <!--Sliding Text Start -->
+        <section class="sliding-text @@extraClassName">
+            <div class="sliding-text__wrap">
+                <ul class="sliding-text__list list-unstyled">
+                    <li>*Transofrming ideas into reality</li>
+                    <li>*INSPIRED WITH CREATIVITY</li>
+                    <li>*BUILDING EXPERIENCES</li>
+                    <li>*unlocking your potential</li>
+                    <li>*Transofrming ideas into reality</li>
+                    <li>*INSPIRED WITH CREATIVITY</li>
+                    <li>*BUILDING EXPERIENCES</li>
+                    <li>*unlocking your potential</li>
+                    <li>*Transofrming ideas into reality</li>
+                    <li>*INSPIRED WITH CREATIVITY</li>
+                    <li>*BUILDING EXPERIENCES</li>
+                    <li>*unlocking your potential</li>
+                </ul>
+            </div>
+        </section>
+        <!--Sliding Text Start -->
+
+        <footer class="main-footer" style="background-image: url(assets/images/backgrounds/footer-bg-1.png);">
+            <div class="container">
+                <div class="main-footer__top wow fadeInUp animated" data-wow-delay="100ms">
+                    <a href="index.html" class="main-footer__logo">
+                        <img src="assets/images/logos/X.png" alt="ux" width="55" height="55">
+                    </a><!-- /.footer-logo -->
+                    <div class="main-footer__social">
+                        <a href="https://discord.com/invite/mfmp3Ppn4Z"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.instagram.com/userexperiencemedia"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/userxmedia"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@userexperiencemedia"><i class="fab fa-youtube"></i></a>
+                    </div><!-- /.footer-social -->
+                </div><!-- footer-top -->
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 wow fadeInUp animated" data-wow-delay="200ms">
+                        <div class="main-footer__about">
+                            <p class="footer-widget__text">Let’s start working together</p>
+                            <a href="mailto:mgmt@creator.contact">mgmt@creator.contact</a>
+                        </div><!-- /.footer-widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-3 wow fadeInUp animated" data-wow-delay="300ms">
+                        <div class="main-footer__navmenu">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="roster.html">Roster</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="coming-soon.html">Media</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul><!-- /.list-unstyled -->
+                        </div><!-- /.footer-widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-3 wow fadeInUp animated" data-wow-delay="400ms">
+                        <div class="main-footer__navmenu">
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="tos.html">Terms of Service</a></li>
+                                <li><a href="dmca.html">DMCA</a></li>
+                                <li><a href="contact.html">Help</a></li>
+                            </ul><!-- /.list-unstyled -->
+                        </div><!-- /.footer-widget -->
+                    </div>
+                </div><!-- /.row -->
+                <p class="main-footer__copyright wow fadeInUp animated" data-wow-delay="500ms">© Copyright <span class="dynamic-year"></span><!-- /.dynamic-year --> by <a href="index.html">User Experience Media. </a> All rights reserved.</p>
+            </div><!-- /.container -->
+        </footer><!-- /.main-footer -->
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logos/X.png" width="36" alt="ux" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mgmt@creator.contact">mgmt@creator.contact</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+                        <a href="https://discord.com/invite/mfmp3Ppn4Z"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.instagram.com/userexperiencemedia"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/userxmedia"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@userexperiencemedia"><i class="fab fa-youtube"></i></a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <!-- back-to-top-start -->
+    <a href="#" class="scroll-top">
+        <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </a>
+    <!-- back-to-top-end -->
+
+
+    <script src="assets/vendors/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <!-- template js -->
+    <script src="assets/js/ux.js"></script>
+</body>
+
+</html>
