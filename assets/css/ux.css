@@ -5770,6 +5770,7 @@ h6 {
   transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
 }
 
+
 .project-two__item:hover .project-two__item__image::after {
   visibility: visible;
   transform: scaleY(1) translateZ(0px);
@@ -5778,6 +5779,21 @@ h6 {
 .project-two__item:hover .project-two__item__image img {
   transform: scale(1.05);
 }
+
+
+/* Make the link act like a block-level wrapper */
+.project-two__item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional hover effect for whole tile */
+.project-two__item-link:hover .project-two__item__content__title {
+  color: var(--ux-base);
+}
+
+
 
 .project-two__item__content {
   position: absolute;
